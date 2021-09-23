@@ -1,10 +1,12 @@
-$dark: #000;
+$dark: #080808;
 $light: #fff;
-$primary: #3030bd;
+$primary: #2C6DFF;
 
 //nav-color
-$navbar-light-color: #000;
-$navbar-light-hover-color: #3030bd;
+$navbar-light-color: #080808;
+$navbar-light-hover-color: #2C6DFF;
+$navbar-dark-color: #2C6DFF;
+$navbar-dark-hover-color:#fff;
 
 //bootstrap import
 @import "../node_modules/bootstrap/scss/bootstrap";
