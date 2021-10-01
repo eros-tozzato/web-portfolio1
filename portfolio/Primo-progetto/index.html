@@ -64,7 +64,8 @@
 
  <!--start-project-section-->
  <div class="container project-container p-5">
-  <h1 class="display-4 text-primary text-center text-sm-start p-3" id="portfolio">Progetto1</h1>
+  <!--<h1 class="display-4 text-primary text-center text-sm-start p-3" id="contatti">Contatti</h1>-->
+  <div id="text1" class="display-3 text-primary"></div>
   <div class="row">
     <div class="col-sm-6">
       <!--immagine qui-->
@@ -136,24 +137,35 @@
  
  
 <!--start-Footer-->
-<footer class="p-5 text-center align-items-center">
-  <p class="lead">Eros Tozzato 2021</p>
+<footer class="p-5 text-center align-items-center bg-dark">
+  <p class="lead text-light">Eros Tozzato 2021</p>
   <div class="justify-content-center mb-3">
     <div class="btn-group" role="group">
-      <a href="./contatti/" class="btn btn-outline-primary"><i class="bi bi-envelope"></i></a>
+      <a href="/contatti/" class="btn btn-outline-primary"><i class="bi bi-envelope"></i></a>
       <a href="https://www.linkedin.com/in/eros-tozzato-71862020b/" class="btn btn-outline-primary" target="_blank"><i class="bi bi-linkedin"></i></a>
       <a href="https://www.instagram.com/eros.tozzato/?hl=it" class="btn btn-outline-primary" target="_blank"><i class="bi bi-instagram"></i></a>
       <a href="https://www.facebook.com/eros.tozzato" class="btn btn-outline-primary" target="_blank"><i class="bi bi-facebook"></i></a>
       <a href="https://github.com/eros-tozzato" class="btn btn-outline-primary" target="_blank"><i class="bi bi-github"></i></a>
     </div>
   </div> 
-  <a href="#" class=" text-dark text-decoration-none">Torna al menu <i class="bi bi-arrow-up-circle"></i></a>
+  <a href="#" class=" text-light text-decoration-none">Torna al menu <i class="bi bi-arrow-up-circle"></i></a>
 </footer>
 <!--end-Footer-->
 
 
 
-
+<script type="text/javascript">
+  var i=0,text1;
+  text = "Progetto1"
+  function typing() {
+    if(i<text.length){
+      document.getElementById("text1").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,70)
+    }
+  }
+  typing();
+</script>
  <!--Bootstrap js-->
 <script src="/assets/js/bootstrap.min.js"></script>
 </body>
