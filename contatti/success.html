@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  
+<!--Foglio di stile-->
+  <link rel="stylesheet" href="../assets/css/main.min.css">
+  
+  
+<!--Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  
+  
+  <title>Eros Tozzato, aspirante UX/UI designer</title>
+
+
+</head>
+
+
+<body>
+
+<!--Start-Contatti-->
+<div class="container form-container p-5">
+   <!--<h1 class="display-4 text-primary text-center text-sm-start p-3" id="successo">Successo</h1>-->
+    <div id="text1" class="display-3 text-primary"></div>
+    <p>Grazie per avermi contattato, ti risponderò il prima possibile!</p>
+</div>
+<!--end-Contatti-->
+
+
+
+<script type="text/javascript">
+  var i=0,text1;
+  text = "La tua mail è stata inviata con successo!"
+  function typing() {
+    if(i<text.length){
+      document.getElementById("text1").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,70)
+    }
+  }
+  typing();
+</script>
+<!--Bootstrap js-->
+<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
