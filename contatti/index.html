@@ -74,6 +74,11 @@
    <!--<h1 class="display-4 text-primary text-center text-sm-start p-3" id="contatti">Contatti</h1>-->
     <div id="text1" class="display-3 text-primary"></div>
     <form action="https://formsubmit.co/f9a51e35f99ec9c7d88eb06fe549d400" method="POST" class="row g-3">
+      <!-- Honeypot -->
+      <input type="text" name="_honey" style="display:none;">
+
+      <!-- captcha disattivato -->
+      <input type="hidden" name="_captcha" value="false">
         <div class="col-md-6">
             <label for="nome" class="form-label">Nome*</label>
             <input type="text" class="form-control" name="Nome" id="nome" required>
